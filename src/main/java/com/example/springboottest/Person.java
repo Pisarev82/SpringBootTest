@@ -4,9 +4,13 @@ public class Person {
     private Pet pet;
     private String name;
     private int age;
-//    public Person(Pet pet) {
-//        this.pet = pet;
-//    }
+
+    public Person(){
+
+    }
+    public Person(Pet pet) {
+        this.pet = pet;
+    }
 
     public void setPet(Pet pet) {
         this.pet = pet;
