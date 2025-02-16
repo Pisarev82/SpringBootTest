@@ -1,5 +1,13 @@
 package com.example.springboottest;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+/**
+ * Аннотация @Scope("prototype") позволяет создавать несколько экземпляров бина
+ */
+@Component
+@Scope("prototype")
 public class Dog implements Pet {
     private String name;
     @Override

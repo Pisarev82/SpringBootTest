@@ -1,18 +1,42 @@
 package com.example.springboottest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+/**
+ * @Autowired может быть применена к конструктору, любому методу и полю класса
+ * @Qualifier должна быть применена если бинов несколько
+ */
+
+@Component("personBean")
 public class Person {
+//    @Autowired
+//    @Qualifier("dog")
     private Pet pet;
+
+    @Value("Nikolay")
     private String name;
+    @Value("${person.age}")
     private int age;
 
     public Person(){
 
     }
-    public Person(Pet pet) {
+/**
+ * Если в классе только один конструктор, то аннотация @Autowired не обязательна.
+ * Зависимость все равно будет установлена.
+ * Аннотация @Qualifier в конструкторе прописывается в параметрах
+* */
+    @Autowired
+    public Person(@Qualifier("dog")Pet pet) {
         this.pet = pet;
     }
 
+//    @Autowired
     public void setPet(Pet pet) {
+        System.out.println("set pet");
         this.pet = pet;
     }
 
