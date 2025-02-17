@@ -23,7 +23,19 @@ public class Library extends AbstractLibrery{
         return "Мы возвращаем книгу в Library \n ";
     }
 
-    public void getMagazine(int magazineNumber) {
+    public void getMagazine() {
         System.out.println("Мы берем журнал из Library \n ");
+    }
+
+    public void returnMagazine() {
+        System.out.println("Мы возвращаем журнал в Library \n ");
+    }
+
+    public void addBook() {
+        System.out.println("Мы добавляем книгу в Library \n ");
+    }
+
+    public void addMagazine() {
+        System.out.println("Мы добавляем журнал в Library \n ");
     }
 }

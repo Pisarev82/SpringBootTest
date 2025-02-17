@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * Для использования должен быть установлена зависивость AspectJ weaver
  * Pointcut - точка входа указывается в аннотации @Before
  */
-@Component
-@Aspect
+//@Component
+//@Aspect
 public class LoggingAspect {
     /**
      * Варианты @Before
@@ -61,3 +61,4 @@ public class LoggingAspect {
     }
 
 }
+

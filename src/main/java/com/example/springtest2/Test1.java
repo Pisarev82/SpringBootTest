@@ -11,7 +11,7 @@ public class Test1 {
         library.getBook();
         LibraryEe library2 = context.getBean(LibraryEe.class);
         library2.getBook();
-        library.getMagazine(100);
+        library.getMagazine();
         System.out.println(library.returnBook());
         library.getBook("Капиталл");
         Book book = context.getBean(Book.class);
