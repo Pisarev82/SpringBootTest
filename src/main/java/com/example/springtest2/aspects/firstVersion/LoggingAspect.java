@@ -1,14 +1,17 @@
-package com.example.springtest2.aspects;
+package com.example.springtest2.aspects.firstVersion;
 
-import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.stereotype.Component;
 
 /**
  * Аннотация @Aspect
  * Для использования должен быть установлена зависивость AspectJ weaver
  * Pointcut - точка входа указывается в аннотации @Before
+ */
+
+/**
+ * Первая версия знакомства с аспектами. Для возврата работоспособности
+ * раскомментировать аннотации
  */
 //@Component
 //@Aspect

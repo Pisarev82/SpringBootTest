@@ -31,11 +31,13 @@ public class Library extends AbstractLibrery{
         System.out.println("Мы возвращаем журнал в Library \n ");
     }
 
-    public void addBook() {
+    public void addBook(String person_name, Book book) {
         System.out.println("Мы добавляем книгу в Library \n ");
+        System.out.println("------------------------------ \n");
     }
 
     public void addMagazine() {
         System.out.println("Мы добавляем журнал в Library \n ");
+        System.out.println("------------------------------ \n");
     }
 }

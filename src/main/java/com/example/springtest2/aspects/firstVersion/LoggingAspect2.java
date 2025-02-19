@@ -1,11 +1,15 @@
-package com.example.springtest2.aspects;
+package com.example.springtest2.aspects.firstVersion;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-@Component
-@Aspect
+/**
+ * Первая версия знакомства с аспектами. Для возврата работоспособности
+ * раскомментировать аннотации
+ */
+//@Component
+//@Aspect
 public class LoggingAspect2 {
     @Pointcut("execution(* get*(..))")
     private void allGetMethod() {}

@@ -8,9 +8,13 @@ public class Test2 {
                 new AnnotationConfigApplicationContext("com.example.springtest2");
 
         Library library = context.getBean(Library.class);
+        library.getMagazine();
         library.getBook();
         library.returnMagazine();
-        library.addBook();
+
+        Book book = context.getBean(Book.class);
+        library.addBook("Nikolay", book);
+        library.addMagazine();
 
         context.close();
     }
