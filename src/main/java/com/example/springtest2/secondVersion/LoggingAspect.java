@@ -2,6 +2,7 @@ package com.example.springtest2.secondVersion;
 
 import com.example.springtest2.Book;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -36,5 +37,4 @@ public class LoggingAspect {
         }
         System.out.println("beforeAddLoggingAdvice: writing log#1 \n");
     }
-
 }
